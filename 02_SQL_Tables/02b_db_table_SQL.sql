@@ -21,7 +21,8 @@ DROP TABLE IF EXISTS boo.test;
 /* Tabelle anlegen, falls noch nicht vorhanden */ 
 CREATE TABLE IF NOT EXISTS boo.test 
 (
-    name VARCHAR(20) NOT NUll DEFAULT "TBA",
+    # Constraint UNIQUE --> keine Doppelten Namen
+    name VARCHAR(20) NOT NUll UNIQUE DEFAULT "TBA",
     age INT NOT NULL DEFAULT 0 
 ); 
 
