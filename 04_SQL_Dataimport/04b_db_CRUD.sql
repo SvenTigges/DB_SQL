@@ -26,7 +26,7 @@ WHERE age > 35
 ; 
 
 /* Delete - Vorsicht!! */
-DELETE FROM cats,  # gesammte Tabelle löschen 
+DELETE FROM cats WHERE id = 2,  # gesammte Tabelle löschen 
 SELECT * FROM cats; # Alle Daten sind weg
 
-DESCRIBE cats; 
+ 
