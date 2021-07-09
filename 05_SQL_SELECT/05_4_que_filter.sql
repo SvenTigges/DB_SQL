@@ -54,7 +54,7 @@ FROM ccc_list
 #WHERE industry LIKE "%ment"
 -- Branchenname enthaelt ...
 #WHERE industry LIKE "%ood%"
-
+/*
 -- Branchenname endet/beginnt mit ... , danach/davor/inmitten genau _ Char
 #WHERE industry LIKE "__dia"
 #WHERE industry LIKE "Med__"
@@ -69,7 +69,15 @@ WHERE industry LIKE "%ment" AND industry NOT LIKE "%ipment" AND industry NOT LIK
 
 ORDER BY industry ASC
 LIMIT 40;
-    
+*/
+
+/*
+SELECT
+    c_name "Unternehmen"
+FROM ccc_list
+WHERE c_name RLIKE "^[AZ]"
+ORDER BY c_name;
+*/    
     
 
 
