@@ -105,4 +105,3 @@ ORDER BY price DESC
 LIMIT 100;
 
 
-
